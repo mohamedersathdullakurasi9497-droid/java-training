@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String S = sc.nextLine();
+        String T = sc.nextLine();
+        int index = Integer.parseInt(sc.nextLine());
+
+        
+        StringBuilder sb = new StringBuilder(S);
+        sb.insert(index, T);
+
+        
+        System.out.println(sb.toString());
+
+        sc.close();
+    }
+}
